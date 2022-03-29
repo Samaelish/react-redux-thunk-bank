@@ -16,9 +16,15 @@ function App() {
 
     const { depositMoney, withdrawMoney } = bindActionCreators(actionCreators, dispatch);
 
+    console.log(account);
+
+    const h1Style = {
+        color: account >= 0 ? 'green' : 'red'
+    }
+
     return (
         <div className="App">
-            <h1>{account}</h1>
+            <h1 style={h1Style}>{account}</h1>
             <button onClick={() => depositMoney(1000)}>Deposit</button>
             <button onClick={() => withdrawMoney(1000)}>Withdraw</button>
         </div>
