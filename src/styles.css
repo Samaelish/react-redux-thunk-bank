@@ -10,9 +10,9 @@ body {
     text-align: center;
 }
 button {
-    margin: 0 1rem;
+    margin: 0 1em;
     padding: 1em 1.5em;
-    border-radius: 0.7rem;
+    border-radius: 0.7em;
     border: none;
     color: #3498db;
     background-color: #ecf0f1;
